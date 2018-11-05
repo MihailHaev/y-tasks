@@ -24,7 +24,11 @@ class App extends PureComponent {
       this.setState({
         data: this.firstData
       });
-      console.log(this.firstData);
+      const preloader = document.querySelector('.preloader');
+      preloader.style.opacity = 0;
+      setTimeout(() => {
+        preloader.remove();
+      }, getComputedStyle(preloader).transitionDuration.slice(0, -1) * 1000 );
     });
   }
 
