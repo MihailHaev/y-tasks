@@ -3,13 +3,21 @@ import React, {PureComponent} from 'react';
 // term - значение строки поиска Str | data - данные Arr | update - функция обновления Func
 class Filters extends PureComponent {
   state = {
-    data: this.props.data, // Начальные данные
     filteredDataSearch: this.props.data, // Данные отфильтрованные поиском
     filteredDataCheckBox: this.props.data, // Данные отфильтрованные чекбоксом
     filteredDataSelect: this.props.data  // Данные отфильтрованные выбором
   };
 // Функция для группировки всех примененых фильтров
   groupFilters = () => {
+    if(this.state.filteredDataCheckBox == undefined) {
+      this.state.filteredDataCheckBox = this.props.data;
+    }
+    if(this.state.filteredDataSearch == undefined) {
+      this.state.filteredDataSearch = this.props.data;
+    }
+    if(this.state.filteredDataSelect == undefined) {
+      this.state.filteredDataSelect = this.props.data;
+    }
     let groupedFilters = this.state.filteredDataSearch.filter(obj => {
       for (let i = 0; i < this.state.filteredDataCheckBox.length; i++) {
         if(this.state.filteredDataCheckBox[i].id == obj.id) {
@@ -32,7 +40,8 @@ class Filters extends PureComponent {
  
   dataSearch = e => {
     const value = e.target.value.toLowerCase();
-    this.state.filteredDataSearch = this.state.data.filter(tableData => {
+
+    this.state.filteredDataSearch = this.props.data.filter(tableData => {
   
       return ((String(tableData.flightNumber).includes(value))
         || tableData.from.toLowerCase().includes(value)
@@ -49,7 +58,7 @@ class Filters extends PureComponent {
 
   findWhere = e => {
     const selected = e.target.value;
-    const data = this.state.data;
+    const data = this.props.data;
 
       if (selected == 'all') {
         this.state.filteredDataSelect = data;
@@ -71,7 +80,7 @@ class Filters extends PureComponent {
 
   findDelayed = e => {
     const isChecked = e.target.checked;
-    const data = this.state.data;
+    const data = this.props.data;
 
     this.state.filteredDataCheckBox = data;
     if (isChecked) {

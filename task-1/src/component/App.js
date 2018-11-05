@@ -1,13 +1,32 @@
 import React, {PureComponent} from 'react';
 import Table from './Table';
 import Filters from './Filters';
-import timetable from '../data'
+import load from '../utils/load';
 
 class App extends PureComponent {
-  state = {
-    data: timetable,  // Данные 
-    term: '' // Начальный поиск
-  };
+  constructor(props) {
+    super(props);
+    // Устанавливаем состояние
+    this.state = {
+      data: [],
+      term: ''
+    };
+    // Сразу загружаем данные
+    this.loadData();
+  }
+
+  loadData() {
+    load(this.props.data).then(schedule => {
+      this.firstData = JSON.parse(schedule, function(key, value) {
+        if (key == 'arrival' || key == 'departure') return new Date(value);
+        return value;
+      });
+      this.setState({
+        data: this.firstData
+      });
+      console.log(this.firstData);
+    });
+  }
 
   render() {  
     // Возвращяем таблицу и инпут поиска
@@ -18,7 +37,7 @@ class App extends PureComponent {
           Табло Аэропорта
         </h1>
         <div>
-        <Filters term={this.state.term} data={timetable} update={this.updateData.bind(this)}/>
+        <Filters term={this.state.term} data={this.firstData} update={this.updateData.bind(this)}/>
         </div>
         <Table tableData={this.state.data}/> 
       </div>  

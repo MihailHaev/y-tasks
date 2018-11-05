@@ -1,0 +1,308 @@
+[
+  {
+    "id": 1,
+    "flightNumber": 131,
+    "from": "Москва",
+    "to": "Сочи",
+    "arrival": "2016-11-01T18:00:00",
+    "departure": "2016-11-01T12:45:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 2,
+    "flightNumber": 132,
+    "from": "Париж",
+    "to": "Москва",
+    "arrival": "2016-11-02T03:15:00",
+    "departure": "2016-11-01T23:45:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 3,
+    "flightNumber": 133,
+    "from": "Москва",
+    "to": "Лондон",
+    "arrival": "2016-11-02T07:00:00",
+    "departure": "2016-11-02T03:30:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 4,
+    "flightNumber": 134,
+    "from": "Москва",
+    "to": "Милан",
+    "arrival": "2016-11-02T19:50:00",
+    "departure": "2016-11-02T14:00:00",
+    "flightDelay": {
+      "isDelay": true,
+      "delayTime": [
+        0,
+        0,
+        0,
+        2,
+        35
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "flightNumber": 131,
+    "from": "Москва",
+    "to": "Сочи",
+    "arrival": "2016-11-01T18:00:00",
+    "departure": "2016-11-01T12:45:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 6,
+    "flightNumber": 132,
+    "from": "Париж",
+    "to": "Москва",
+    "arrival": "2016-11-02T03:15:00",
+    "departure": "2016-11-01T23:45:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 7,
+    "flightNumber": 133,
+    "from": "Москва",
+    "to": "Лондон",
+    "arrival": "2016-11-02T07:00:00",
+    "departure": "2016-11-02T03:30:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 8,
+    "flightNumber": 134,
+    "from": "Москва",
+    "to": "Милан",
+    "arrival": "2016-11-02T19:50:00",
+    "departure": "2016-11-02T14:00:00",
+    "flightDelay": {
+      "isDelay": true,
+      "delayTime": [
+        0,
+        0,
+        0,
+        2,
+        35
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "flightNumber": 131,
+    "from": "Москва",
+    "to": "Сочи",
+    "arrival": "2016-11-01T18:00:00",
+    "departure": "2016-11-01T12:45:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 10,
+    "flightNumber": 132,
+    "from": "Париж",
+    "to": "Москва",
+    "arrival": "2016-11-02T03:15:00",
+    "departure": "2016-11-01T23:45:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 11,
+    "flightNumber": 133,
+    "from": "Москва",
+    "to": "Лондон",
+    "arrival": "2016-11-02T07:00:00",
+    "departure": "2016-11-02T03:30:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 12,
+    "flightNumber": 134,
+    "from": "Москва",
+    "to": "Милан",
+    "arrival": "2016-11-02T19:50:00",
+    "departure": "2016-11-02T14:00:00",
+    "flightDelay": {
+      "isDelay": true,
+      "delayTime": [
+        0,
+        0,
+        0,
+        2,
+        35
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "flightNumber": 131,
+    "from": "Москва",
+    "to": "Сочи",
+    "arrival": "2016-11-01T18:00:00",
+    "departure": "2016-11-01T12:45:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 14,
+    "flightNumber": 132,
+    "from": "Париж",
+    "to": "Москва",
+    "arrival": "2016-11-02T03:15:00",
+    "departure": "2016-11-01T23:45:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 15,
+    "flightNumber": 133,
+    "from": "Москва",
+    "to": "Лондон",
+    "arrival": "2016-11-02T07:00:00",
+    "departure": "2016-11-02T03:30:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 16,
+    "flightNumber": 134,
+    "from": "Москва",
+    "to": "Милан",
+    "arrival": "2016-11-02T19:50:00",
+    "departure": "2016-11-02T14:00:00",
+    "flightDelay": {
+      "isDelay": true,
+      "delayTime": [
+        0,
+        0,
+        0,
+        2,
+        35
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "flightNumber": 131,
+    "from": "Москва",
+    "to": "Сочи",
+    "arrival": "2016-11-01T18:00:00",
+    "departure": "2016-11-01T12:45:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 18,
+    "flightNumber": 132,
+    "from": "Париж",
+    "to": "Москва",
+    "arrival": "2016-11-02T03:15:00",
+    "departure": "2016-11-01T23:45:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 19,
+    "flightNumber": 133,
+    "from": "Москва",
+    "to": "Лондон",
+    "arrival": "2016-11-02T07:00:00",
+    "departure": "2016-11-02T03:30:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 20,
+    "flightNumber": 134,
+    "from": "Москва",
+    "to": "Милан",
+    "arrival": "2016-11-02T19:50:00",
+    "departure": "2016-11-02T14:00:00",
+    "flightDelay": {
+      "isDelay": true,
+      "delayTime": [
+        0,
+        0,
+        0,
+        2,
+        35
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "flightNumber": 131,
+    "from": "Москва",
+    "to": "Сочи",
+    "arrival": "2016-11-01T18:00:00",
+    "departure": "2016-11-01T12:45:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 22,
+    "flightNumber": 132,
+    "from": "Париж",
+    "to": "Москва",
+    "arrival": "2016-11-02T03:15:00",
+    "departure": "2016-11-01T23:45:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 23,
+    "flightNumber": 133,
+    "from": "Москва",
+    "to": "Лондон",
+    "arrival": "2016-11-02T07:00:00",
+    "departure": "2016-11-02T03:30:00",
+    "flightDelay": {
+      "isDelay": false
+    }
+  },
+  {
+    "id": 24,
+    "flightNumber": 134,
+    "from": "Москва",
+    "to": "Милан",
+    "arrival": "2016-11-02T19:50:00",
+    "departure": "2016-11-02T14:00:00",
+    "flightDelay": {
+      "isDelay": true,
+      "delayTime": [
+        0,
+        0,
+        0,
+        2,
+        35
+      ]
+    }
+  }
+]

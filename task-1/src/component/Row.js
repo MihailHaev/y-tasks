@@ -2,10 +2,16 @@ import React from 'react'
 
 function Row(props) {
   const dataElement = props.dataElement;
+  
   function checkTime(date) {
-        date = new Date(date[2], (date[1]-1), date[0], date[3], date[4]).
+    const formatDate = {}.toString.call(date).slice(8, -1);
+    if(formatDate == 'Date') {
+      date = date.toString().substr(16, 5);
+    } else if (formatDate == 'Array') {
+      date = new Date(date[2], (date[1]-1), date[0], date[3], date[4]).
       toString().
       substr(16, 5);
+    }
     return date;
   }
    
